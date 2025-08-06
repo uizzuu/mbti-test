@@ -30,6 +30,7 @@ body{
   font-size: 24px;
   font-weight: 500;
   text-align: center;
+  line-height: 1.2;
 }
 
 .result h3{
@@ -62,6 +63,7 @@ body{
   text-align: center;
   border: 1px solid #ffe603;
   border-radius: 20px;
+  line-height: 1.2;
 }
 
 .result .lecture img{
