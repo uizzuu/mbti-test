@@ -31,11 +31,12 @@ const lectureImgEl = document.querySelector(".lecture img")
 // 단, querySelectorAll로 가져온 아이들은 forEach구문을 이용해 처리
 // 문법은 찾아서 사용
 
-function renderQuestion(){
+function renderResult(){
   const index = mbtis[mbti]
   const result = results[index]
+
   titleEl.innerHTML = result.title
-  characterEl.innerHTML = result.character
+  characterEl.src = result.character
   boxEls.forEach((boxEl, i) => {
     boxEl.innerHTML = result.results[i]
   })
@@ -46,4 +47,4 @@ function renderQuestion(){
   lectureImgEl.src = result.lectureImg
 }
 
-renderQuestion()
+renderResult();
